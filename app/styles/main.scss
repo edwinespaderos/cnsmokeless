@@ -1,0 +1,267 @@
+@import 'compass/css3';
+
+
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: top;
+}
+
+
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.title {
+  font-family: 'Roboto Slab';
+  text-align: center;
+  font-size: 2.75em;
+  margin-bottom: 0.3em;
+}
+
+
+// Age verefication ------------------
+
+#age-verefier {
+  display: block;
+  background: #333;
+  hidden: true;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 110;
+  position: fixed;
+  text-align: center;
+  padding-top: 100px;
+  color: #fafafa;
+  margin-bottom: 1em;
+
+  &.active {
+    display: none;
+  }
+
+  .logo {
+    width: 35%;
+  }
+  
+  h1 {
+    font-family: 'Roboto Slab';
+    letter-spacing: 0.04em;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+  }
+
+  button {
+    cursor: pointer;
+    background: #CCC973;
+    margin-left: 1em;
+    font-size: 0.8em;
+    padding: 1em;
+    border-bottom: 4px solid #807F6E;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+      &:hover {
+        padding: 1.07em;
+      }    
+   }
+
+   .btn {
+      background: #DADADA;
+   }
+
+  p {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-align: center;
+    padding: 0 400px;
+    line-height: 1.3em;
+    margin-top: 0.9em;
+  }
+
+  .statement {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+}
+ 
+.warning {
+  width: 20%;
+  position: fixed;
+  right: 0;
+  z-index: 100;
+}
+ 
+.header {
+  height: 100vh;
+  background: url("../images/header-img.jpg") fixed no-repeat;
+  background-size: 100%;
+  .logo {
+    width: 45%;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    right: 0;
+  }
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+  background: rgba(204, 201, 115, 0.89);
+  bottom: 0;
+  font-family: 'Open Sans';
+  font-size: 1.7em;
+  font-weight: light;
+  color: #fafafa;
+
+  ul {
+    text-align: center;
+    padding: 1.2em;
+  }
+
+  li {
+    text-align: center;
+    display: inline;
+    margin-left: 0.5em;
+    color: fafafa;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    
+    &:hover {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  }
+} 
+ 
+ .nav-scroll {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  background: rgba(204, 201, 115, 0.89);
+  top: 0;
+  font-family: 'Open Sans';
+  font-size: 1.7em;
+  font-weight: light;
+  color: #fafafa;
+  margin-bottom: 100px;
+  z-index: 20;
+ }
+ 
+
+ 
+.about {
+height: 43vh;
+position: relative;
+padding: 9em 0;
+z-index: 10;
+background-image: url('../images/bridge.jpg');
+background-size: 100%;
+color: #FFF;
+text-align: center;
+  
+  .info {
+    position: absolute;
+    z-index: 5;
+  }
+
+  p {
+    padding: 0 8.3em;
+  }
+
+ &:before {
+ content: "";
+ display: block;
+ position: absolute;
+ top: 0px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: #AF9B09;
+ background-image: -webkit-gradient(linear, left top, right bottom, from(#92570B), to(#AF9B09));
+ background-image: -webkit-linear-gradient(top left,  #92570B, #AF9B09);
+ background-image: linear-gradient(to bottom right,  #92570B, #AF9B09);
+ opacity: 0.8;
+ z-index: 1;
+ }
+
+}
+
+
+.products {
+  margin-top: 4.5em;
+  
+  img {
+    width: 25%;
+    display: inline-block;
+  }
+  
+}
+
+.prod-cont {
+  padding-bottom: 40px;
+  border-bottom: 2px dashed #333; 
+  margin: 100px 0;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.prod-info {
+  display: inline-block;
+  width: 65%;
+  margin: 48px 0 0 56px;
+  span {
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+
+}
+
+.footer {
+  // height: 10vh;
+  background: #333;
+  width: 100%;
+  padding: 20px 0;
+  .title {
+    color: #E2E2E2;
+    font-weight: 200;
+  }
+    p {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #E2E2E2;
+      font-size: 1em;
+      font-weight: 100;
+      width: 60%;
+    }
+
+    .copy-right {
+      font-size: 0.9em;
+      font-weight: 300;
+    }
+
+    a {
+      text-decoration: none;
+      color: #B0B800;
+    }
+}
