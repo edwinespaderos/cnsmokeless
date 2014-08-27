@@ -96,13 +96,16 @@ p {
   .statement {
     text-transform: uppercase;
     font-weight: bold;
+    color: #b11f24;
+    text-shadow: 3px 0px 1px #2C2C2C;
   }
 
 }
  
 .warning {
-  width: 20%;
+  height: 15%;
   position: fixed;
+  left: 0;
   right: 0;
   z-index: 100;
 }
@@ -114,7 +117,7 @@ p {
   .logo {
     width: 45%;
     position: absolute;
-    top: 3em;
+    top: 11em;
     left: 0;
     right: 0;
   }
@@ -154,7 +157,7 @@ p {
  
  .nav-scroll {
   width: 100%;
-  height: 10vh;
+  height: 28vh;
   position: fixed;
   background: rgba(204, 201, 115, 0.89);
   top: 0;
@@ -164,6 +167,9 @@ p {
   color: #fafafa;
   margin-bottom: 100px;
   z-index: 20;
+  ul {
+    margin-top: 4.2em;
+  }
  }
  
 
@@ -207,7 +213,7 @@ text-align: center;
 
 
 .products {
-  margin-top: 4.5em;
+  margin-top: 30vh;
   
   img {
     width: 25%;
@@ -223,7 +229,7 @@ text-align: center;
   &:last-child {
     border-bottom: none;
   }
-}
+} 
 
 .prod-info {
   display: inline-block;
@@ -235,6 +241,11 @@ text-align: center;
     font-size: 1.8em;
   }
 
+}
+.trade-part {
+  padding: 107px 0;
+  background: #9B9470;
+  
 }
 
 .footer {
